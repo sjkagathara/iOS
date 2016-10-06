@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Jelloween - Machinato.ttf">
+            <string>Machinato</string>
+            <string>Machinato</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="view" destination="8Za-xE-jSh" id="XAz-b2-dra"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8Za-xE-jSh">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_main_menu" translatesAutoresizingMaskIntoConstraints="NO" id="qYk-p0-0Hq">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5z-9H-w7X">
+                    <rect key="frame" x="37" y="322" width="245" height="54"/>
+                    <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
+                    <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="22"/>
+                    <state key="normal" title="              Animation " backgroundImage="btn_bg_menu_animation_test">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="animationAction:" destination="-1" eventType="touchUpInside" id="ork-ju-qNB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoS-XB-cUN">
+                    <rect key="frame" x="37" y="192" width="245" height="54"/>
+                    <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
+                    <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="22"/>
+                    <state key="normal" title="              Search" backgroundImage="btn_bg_menu_chat">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tableAction:" destination="-1" eventType="touchUpInside" id="zfr-sZ-4hs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="zoS-XB-cUN" firstAttribute="centerX" secondItem="8Za-xE-jSh" secondAttribute="centerX" id="0Y4-nt-Dk4"/>
+                <constraint firstAttribute="trailing" secondItem="qYk-p0-0Hq" secondAttribute="trailing" id="43i-8q-tDK"/>
+                <constraint firstItem="zoS-XB-cUN" firstAttribute="top" secondItem="8Za-xE-jSh" secondAttribute="top" constant="192" id="E4c-OQ-VFb"/>
+                <constraint firstItem="qYk-p0-0Hq" firstAttribute="centerY" secondItem="8Za-xE-jSh" secondAttribute="centerY" id="IJc-vK-Gkv"/>
+                <constraint firstItem="qYk-p0-0Hq" firstAttribute="leading" secondItem="8Za-xE-jSh" secondAttribute="leading" id="USy-ga-v1V"/>
+                <constraint firstItem="qYk-p0-0Hq" firstAttribute="top" secondItem="8Za-xE-jSh" secondAttribute="top" id="ZaR-BZ-w8V"/>
+                <constraint firstItem="qYk-p0-0Hq" firstAttribute="centerX" secondItem="8Za-xE-jSh" secondAttribute="centerX" id="lBL-lC-otd"/>
+                <constraint firstItem="h5z-9H-w7X" firstAttribute="centerX" secondItem="8Za-xE-jSh" secondAttribute="centerX" id="nhe-ki-DRY"/>
+                <constraint firstAttribute="bottom" secondItem="qYk-p0-0Hq" secondAttribute="bottom" id="xaV-kW-VO1"/>
+                <constraint firstItem="h5z-9H-w7X" firstAttribute="top" secondItem="zoS-XB-cUN" secondAttribute="bottom" constant="76" id="y7f-Dt-95V"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_main_menu" width="320" height="568"/>
+        <image name="btn_bg_menu_animation_test" width="245" height="54"/>
+        <image name="btn_bg_menu_chat" width="245" height="54"/>
+    </resources>
+</document>
